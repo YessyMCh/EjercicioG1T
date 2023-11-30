@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio MediaQuery 1</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .container div{
+            background-color: lightsteelblue;
+        }
+
+        @media (max-width: 960px) {
+            .container{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-auto-rows: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus facilis vitae quod quos odio accusamus.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus facilis vitae quod quos odio accusamus.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus facilis vitae quod quos odio accusamus.</div>
+        
+    </div>
+</body>
+</html>
